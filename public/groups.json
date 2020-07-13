@@ -685,6 +685,10 @@
         {
           "path": "json/personal_sunyour.json"
         }
+        {
+          "path": "json/personal_nomaded.json",
+          "extra_description_path": "extra_descriptions/personal_nomaded.json.html"
+        },
       ]
     },
     {
