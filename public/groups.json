@@ -842,6 +842,10 @@
         {
           "path": "json/iliaskarim_personal_mapping.json"
         }
+        {
+          "path": "json/personal_nomaded.json",
+          "extra_description_path": "extra_descriptions/personal_nomaded.json.html"
+        },
       ]
     },
     {
