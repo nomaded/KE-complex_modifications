@@ -118,7 +118,7 @@
                 },
                 {
                     "type": "basic",
-                    "from": <%= from("-", [], ["any"]) %>,
+                    "from": <%= from("hyphen", [], ["any"]) %>,
                     "to": <%= to([["f11"]]) %>,
                     "conditions": [
                         { "type": "variable_if", "name": "touchcursor_mode", "value": 1 }
@@ -126,7 +126,7 @@
                 },
                 {
                     "type": "basic",
-                    "from": <%= from("=", [], ["any"]) %>,
+                    "from": <%= from("equal_sign", [], ["any"]) %>,
                     "to": <%= to([["f12"]]) %>,
                     "conditions": [
                         { "type": "variable_if", "name": "touchcursor_mode", "value": 1 }
@@ -263,8 +263,7 @@
                 {
                     "type": "basic",
                     "from": <%= from("caps_lock", [], ["any"]) %>,
-                    "to": <%= to([["vk_none"], ["left_control"]]) %>,
-                    "to_if_alone": <%= to([["escape"]]) %>,
+                    "to": <%= to([["escape"]]) %>,
                     "conditions": [
                         { "type": "variable_if", "name": "touchcursor_mode", "value": 1 }
                     ]
@@ -352,8 +351,7 @@
                 {
                     "type": "basic",
                     "from": <%= from("quote", [], ["any"]) %>,
-                    "to": <%= to([["vk_none"], ["left_control"]]) %>,
-                    "to_if_alone": <%= to([["escape"]]) %>,
+                    "to": <%= to([["escape"]]) %>,
                     "conditions": [
                         { "type": "variable_if", "name": "touchcursor_mode", "value": 1 }
                     ]
@@ -465,5 +463,9 @@
                     "conditions": [
                         { "type": "variable_if", "name": "touchcursor_mode", "value": 1 }
                     ]
-                },
+                }
+            ]
+        }
+    ]
+}
 
